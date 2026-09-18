@@ -3,6 +3,38 @@
 
 # Activeledger SDK-IOS
 
+> ## ⚠️ Unmaintained and archived
+>
+> **This SDK is not maintained and should not be used for new work.** It was
+> last updated in 2020 and supports neither post-quantum identities
+> (`ml-dsa-65`, `falcon-512`) nor `secp256k1` as the ledger encodes it today —
+> so it cannot create an identity that a current Activeledger network will
+> accept as post-quantum, and cannot sign for one.
+>
+> It is archived rather than rewritten because nothing currently depends on
+> it. If you need a maintained iOS SDK, raise an issue on
+> [activeledger](https://github.com/activeledger/activeledger) — it is worth
+> building, just not on spec.
+>
+> ### Maintained SDKs
+>
+> | Language | Repository | Post-quantum | secp256k1 |
+> |---|---|:---:|:---:|
+> | JavaScript / TypeScript | [SDK-JS](https://github.com/activeledger/SDK-JS) | ML-DSA-65, Falcon-512 | ✅ |
+> | Kotlin / Java / Android | [SDK-JVM](https://github.com/activeledger/SDK-JVM) | ML-DSA-65, Falcon-512 | ✅ |
+> | C# / .NET | [SDK-CSharp](https://github.com/activeledger/SDK-CSharp) | ML-DSA-65, Falcon-512 | ✅ |
+> | Python | [SDK-Python](https://github.com/activeledger/SDK-Python) | ML-DSA-65, Falcon-512 | ✅ |
+> | Go | [SDK-Golang](https://github.com/activeledger/SDK-Golang) | ML-DSA-65 | ✅ |
+> | Rust | [SDK-Rust](https://github.com/activeledger/SDK-Rust) | ML-DSA-65 | ✅ |
+> | PHP | [SDK-PHP](https://github.com/activeledger/SDK-PHP) | ML-DSA-65 | ✅ |
+>
+> A Swift client can also drive a node over HTTP directly: a transaction is
+> JSON, and the signature covers the exact bytes of `JSON.stringify($tx)`.
+>
+> The companion demo app is
+> [SDK-IOS-Example](https://github.com/activeledger/SDK-IOS-Example).
+
+
 ![](https://github.com/activeledger/SDK-IOS/blob/master/assets/appVideo.gif)
 
 
